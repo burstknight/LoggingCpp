@@ -1,5 +1,6 @@
 #include <stdio.h>
 #include <stdlib.h>
+#include <string>
 
 namespace LoggingCpp {
 	enum LoggingLevel{
@@ -30,6 +31,13 @@ namespace LoggingCpp {
 		 * @return return 0 if succeed to log message, otherwise return 1
 		 * */
 		int logMessage(LoggingLevel level, const char *pcKeyword, bool isWrite ,const char *pcMessage, ...);
+
+		// private methods
+	private:
+		/* Description: Get the current timestamp
+		 * @return return the current timestamp
+		 * */
+		std::string getCurrTimestamp();
 	};	// End of class myLogger
 
 }	// En of namespace LoggingCpp
