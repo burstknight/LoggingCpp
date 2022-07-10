@@ -1,3 +1,4 @@
+#include <cstdarg>
 #include <stdio.h>
 #include <stdlib.h>
 #include <string>
@@ -44,6 +45,18 @@ namespace LoggingCpp {
 		 * @return return the current date
 		 */
 		std::string getDate();
+
+		/* Description: Write the log message into stream.
+		 * @param pStreamHandler: Set the target to write the log message
+		 * @param pcTerminalColor: The color code to show on terminal
+		 * @param pcLevel: The level of the log message
+		 * @param pcKeyword: The keyword of the log message
+		 * @param pcMessage: The log message
+		 * @param args: This argument for the standard format
+		 * @return Return the length of the message to write stream
+		 */
+		int writeLog(FILE* pStreamHandler, const char *pcTerminalColor, 
+				const char *pcLevel, const char *pcKeyword, const char *pcMessage, va_list args);
 	};	// End of class myLogger
 
 }	// En of namespace LoggingCpp
