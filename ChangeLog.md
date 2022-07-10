@@ -7,6 +7,7 @@
 - Define the method `LoggingCpp::myLogger::getDate()` to get the current date for generating filename.
 
 ### [Changed]
+- Change the definition of the constructor of the class `LoggingCpp::myLogger` to receive two parameters that can set the store directory and prefix of the filename for log file.
 
 ### [Fixed]
 

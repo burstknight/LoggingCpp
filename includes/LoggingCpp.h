@@ -19,9 +19,10 @@ namespace LoggingCpp {
 		// public methods
 	public:
 		/* Description: Constructor
-		 * @param pcLogPath: The path of the log file.
+		 * @param pcLogPath: The directory of the log file.
+		 * @param pcPrefix: The prefix of the log filename
 		 * */
-		myLogger(const char *pcLogPath);
+		myLogger(const char *pcStoreDir = ".", const char *pcPrefix = "");
 
 		/* Description: Log message.
 		 * @param level: The log level.
