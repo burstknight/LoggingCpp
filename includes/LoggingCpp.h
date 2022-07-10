@@ -38,6 +38,11 @@ namespace LoggingCpp {
 		 * @return return the current timestamp
 		 * */
 		std::string getCurrTimestamp();
+
+		/* Description: Get the current date.
+		 * @return return the current date
+		 */
+		std::string getDate();
 	};	// End of class myLogger
 
 }	// En of namespace LoggingCpp
